@@ -1,6 +1,8 @@
 *{
     margin: 0;
-    box-sizing: border-box;
+}
+.body-color{
+    background-color:#66f88f;
 }
 #main{
     text-align: center;
@@ -9,7 +11,7 @@
 input[type='text']{
     width: 30%;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid ;
     margin-bottom: 5px;
     margin-top: 10px;
 }
