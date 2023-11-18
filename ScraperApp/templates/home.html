@@ -12,15 +12,15 @@
         <h1>WEATHER SCRAPER</h1>
         <form method = "GET">
             <input type="text" name = "city" placeholder="City...">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Get Weather"/>
         </form>
         
         {% if weather %}
             <br>
-            <h3>{{weather.region}}</h3>
-            <h3>{{weather.dayhour}}</h3>
-            <h3>{{weather.temp_now}}</h3>
-            <h3>{{weather.weather_now}}</h3>
+            <h2>{{weather.region}}</h2>
+            <h2>{{weather.dayhour}}</h2>
+            <h2>{{weather.temp_now}}</h2>
+            <h2>{{weather.weather_now}}</h2>
         {% endif %}
             
     </div>
