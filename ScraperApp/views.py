@@ -28,5 +28,7 @@ def home(request):
         weather_info ['region'] = soup.find("span", attrs={"class": "BNeawe tAd8D AP7Wnd"}).text
         weather_info ['dayhour'], weather_info['weather_now'] = soup.find("div", attrs={"class": "BNeawe tAd8D AP7Wnd"}).text.split('\n')
         weather_info['temp_now'] = soup.find("div", attrs={"class": "BNeawe iBp4i AP7Wnd"}).text
+        print(weather_info)
+        
         
     return render(request, 'home.html', {'weather': weather_info})
